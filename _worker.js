@@ -57,6 +57,7 @@ async function handleWebSocket(request, expectedUUID) {
     requestParsed: false,
     closed: false,
     writeChain: Promise.resolve(),
+    processingChain: Promise.resolve(),
     earlyDataConsumed: false,
   };
 
@@ -149,7 +150,7 @@ async function handleWebSocket(request, expectedUUID) {
   };
 
   server.addEventListener('message', (event) => {
-    state.writeChain = state.writeChain
+    state.processingChain = state.processingChain
       .then(() => processMessage(event.data))
       .catch((error) => close(error?.message || 'invalid VLESS request'));
   });
@@ -165,7 +166,7 @@ async function handleWebSocket(request, expectedUUID) {
   const earlyData = decodeEarlyData(earlyHeader);
   if (earlyData?.byteLength) {
     state.earlyDataConsumed = true;
-    state.writeChain = state.writeChain
+    state.processingChain = state.processingChain
       .then(() => processMessage(earlyData))
       .catch((error) => close(error?.message || 'invalid early VLESS request'));
   }
