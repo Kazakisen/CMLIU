@@ -7,6 +7,6 @@ keep_vars = true
 
 [vars]
 WS_PATH = "galaxy-tunnel"
-PROXYIP = "galaxproxy.cloud-ip.cc"
+PROXYIP = "galaxtunnel.cloud-ip.cc"
 DNS_RESOLVER_URL = "https://cloudflare-dns.com/dns-query"
-RATE_LIMIT_PER_MINUTE = "250"
+RATE_LIMIT_PER_MINUTE = "120"
