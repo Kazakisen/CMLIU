@@ -19,7 +19,7 @@ const DEFAULT_DOH_URL = [
 ];
 const CLOUDFLARE_LOCATIONS_URL = "https://speed.cloudflare.com/locations";
 const CONNECTION_TIMEOUT_MS = 30000; // 30 seconds timeout
-const DEFAULT_RATE_LIMIT_PER_MINUTE = 250;
+const DEFAULT_RATE_LIMIT_PER_MINUTE = 120;
 const DEFAULT_WS_PATH = "galaxy-tunnel";
 const MAX_CONFIG_PATH_LENGTH = 128;
 
