@@ -1,4 +1,4 @@
-name = "galaxy-tunnel"
+name = "galaxytunnel"
 main = "_worker.js"
 compatibility_date = "2024-09-23"
 compatibility_flags = [ "nodejs_compat" ]
@@ -6,3 +6,7 @@ compatibility_flags = [ "nodejs_compat" ]
 keep_vars = true
 
 [vars]
+WS_PATH = "galaxy-tunnel"
+PROXYIP = "galaxproxy.cloud-ip.cc"
+DNS_RESOLVER_URL = "https://cloudflare-dns.com/dns-query"
+RATE_LIMIT_PER_MINUTE = "250"
