@@ -4,9 +4,9 @@ import { connect } from "cloudflare:sockets";
 // CONSTANTS & DEFAULT CONFIGURATION
 // ============================================
 const DEFAULT_LOCAL_PROXIES = [
-  "galaxproxy.cloud-ip.cc",
-  "blacknight.abrdns.com",
-  "lelouch.abrdns.com",
+  "galaxytunnel.cloud-ip.cc",
+  "www.visasoutheasteurope.com",
+  "icook.hk",
   "www.visa.com.sg"
 ];
 
